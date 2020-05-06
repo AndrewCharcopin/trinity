@@ -1,0 +1,28 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "react/prop-types": 0,
+    "prettier/prettier": "error",
+    "import/prefer-default-export": ["off"],
+    "@typescript-eslint/explicit-function-return-type": ["off"]
+  }
+}
